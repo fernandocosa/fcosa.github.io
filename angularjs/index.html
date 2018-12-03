@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="Calculadora">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+    
+</head>
+
+    <div ng-app="CalculatorApp" ng-controller="CalculatorController">
+      <p><input type="number" ng-model="a"></p>
+      <p><input type="number" ng-model="b"></p>
+      <p><select ng-model="operador">
+            <option>+</option>
+            <option>*</option>
+            <option>-</option>
+            <option>/</option>
+         </select></p>
+      <p>{{ result }}</p>
+      <input type="number" ng-model="result">
+     </div>
+</html>
